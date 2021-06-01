@@ -1,0 +1,129 @@
+.profile {
+  padding-top: 50px;
+}
+
+.photosContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.photosContainer img {
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.mainPhotos {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  min-height: 400px;
+  margin: 80px;
+  border-top: 1px solid lightgray;
+  height: auto;
+  box-shadow: 0px -30px 30px 10px rgba(0, 0, 0, 0.2);
+}
+
+.mainPhotos h1 {
+  justify-self: center;
+  font-weight: 100;
+}
+
+.imageHeader {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imageHeader p {
+  font-size: 24px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.imageHeader input {
+  display: none;
+}
+
+.uploadField {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 200;
+  width: 180px;
+  height: 30px;
+  background-color: rgb(75, 155, 233);
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+.uploadField:hover {
+  transition: 1s;
+  cursor: pointer;
+  background-color: rgb(55, 135, 213);
+}
+
+.imageLink {
+  position: absolute;
+  width: 260px;
+  height: 160px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.imageLink:hover {
+  box-shadow: 2px 2px 100px 5px rgba(0, 0, 0, 0.7) ;
+}
+
+.imageLink {
+  transition: 500ms;
+  transition-timing-function: ease-in-out;
+  box-shadow: none;
+}
+
+.secondHeader {
+  background-image: url('../../images/banner.jpg');
+  height: 200px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  color: white;
+  margin-top: 10px;
+}
+
+
+.userContent h3, h4 {
+  margin-left:310px;
+  padding: 2px;
+}
+
+.userContent h3 {
+  font-size: 23pt;
+  font-weight: 300;
+}
+
+.userContent h4 {
+  margin-bottom: 5px;
+  margin-left: 350px;
+  font-weight: 100;
+}
+
+.tabs {
+  display: flex;
+}
+
+.tabs div {
+  margin: 5px 20px;
+  cursor: pointer;
+}
+
+.tabs div:hover {
+  transform: scale(1.2);
+}

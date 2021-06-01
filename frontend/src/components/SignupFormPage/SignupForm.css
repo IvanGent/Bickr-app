@@ -1,0 +1,17 @@
+.signupContainer {
+  /* background-color: red; */
+  background-image: url('../../images/LogAndSign.jpg');
+  background-size: 110%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signupContainer form {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem;
+  border-radius: 1%;
+}
