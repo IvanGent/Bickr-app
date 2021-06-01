@@ -8,7 +8,7 @@ import { useSelector } from 'react-redux';
 import './ShowingAlbum.css';
 
 
-const ShowngAlbum = ({ album, setShowingAlbum }) => {
+const ShowingAlbum = ({ album, setShowingAlbum }) => {
     const dispatch = useDispatch();
     const sessionUser = useSelector(state => state.session.user);
     const userId = sessionUser.id;
@@ -66,4 +66,4 @@ const ShowngAlbum = ({ album, setShowingAlbum }) => {
     )
 }
 
-export default ShowngAlbum;
+export default ShowingAlbum;
