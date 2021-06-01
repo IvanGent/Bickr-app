@@ -17,7 +17,7 @@ app.use(morgan('dev'));
 //adding the cookie-parser middleware for parsing cookies and the express.json middleware
 // for parsing JSON bodies for requests with Content-Type of "application/json"
 app.use(cookieParser());
-app.use(express.json());
+app.use(express.json({limit: '50mb'}));
 
 //Security Middleware
 if(!isProduction) {
@@ -47,7 +47,8 @@ app.use(
     }
   })
 )
-app.use(express.static('public'));
+
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(routes);
 
 // This is just a regular middleware that will catch any requests that don't match any of the
