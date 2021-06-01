@@ -47,7 +47,7 @@ app.use(
     }
   })
 )
-
+app.use(express.static(__dirname + '/public'));
 app.use(routes);
 
 // This is just a regular middleware that will catch any requests that don't match any of the
