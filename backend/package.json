@@ -19,7 +19,6 @@
   "bugs": {
     "url": "https://github.com/IvanGent/ExpressBackend/issues"
   },
-  "homepage": "https://github.com/IvanGent/ExpressBackend#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.5",
