@@ -6,12 +6,9 @@
 }
 
 .login {
-  /* position: absolute; */
   height: 60px;
   display: flex;
   align-items: center;
-  /* background-color: rgba(0, 0, 0, 0.2); */
-  /* background-color: black; */
 }
 nav li {
   list-style-type: none;
@@ -54,7 +51,6 @@ a.home:hover {
 }
 
 .sessionLinks {
-  /* background-color: burlywood; */
   width: 210px;
   display: flex;
   justify-content: space-between;

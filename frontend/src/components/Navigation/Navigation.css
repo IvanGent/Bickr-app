@@ -55,7 +55,6 @@ a.home:hover {
 }
 
 .sessionLinks {
-  /* background-color: burlywood; */
   width: 210px;
   display: flex;
   justify-content: space-between;
@@ -82,10 +81,8 @@ a.home:hover {
 }
 
 .profileMenu {
-  /* position: absolute; */
   display: flex;
   justify-content: flex-start;
-  /* background-color: red; */
   width: 200px;
   height: 50px;
   margin-right: 20px
@@ -93,8 +90,6 @@ a.home:hover {
 
 .profile-dropdown {
   background-color: lightgray;
-  /* display: flex; */
-  /* justify-content: center; */
   margin-top: 50px;
   width: 180px;
   height: 130px;
@@ -102,7 +97,6 @@ a.home:hover {
 }
 
 .profileMenu button {
-  /* background-color: purple; */
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -113,10 +107,7 @@ a.home:hover {
 }
 
 .profileMenu li {
-  /* background-color: lightgray; */
   padding: 7px;
-  /* width: 120px;
-  height: 50px; */
   width: auto;
   height: auto;
 }
@@ -134,6 +125,5 @@ button.logoutMenu:hover {
 }
 
 .profile-dropdown a {
-  /* text-decoration: none; */
   color: white;
 }

@@ -12,13 +12,11 @@
 .albumPhotos {
     width: 100%;
     display: flex;
-    /* flex-direction: column; */
     flex-wrap: wrap;
 }
 
 .albumPhotos a {
     margin: 0;
-    /* background-color: rgba(0, 0,0,.4); */
     width: 250px;
     height: 150px;
 }
@@ -27,12 +25,10 @@
     width: 100%;
     height: auto;
     opacity: .2;
-    /* position: absolute; */
 }
 
 #noPhotos {
     position: absolute;
-    /* right: 47%; */
     font-size: 1.5em;
     font-weight: bold;
 }

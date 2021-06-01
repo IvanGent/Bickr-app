@@ -1,5 +1,4 @@
 .loginContainer {
-  /* background-color: red; */
   background-image: url('../../images/LogAndSign.jpg');
   background-size: 110%;
   display: flex;
@@ -14,7 +13,6 @@
   flex-direction: column;
   padding: 1rem 4rem;
   border-radius: 1%;
-  /* width: 400px; */
 }
 
 .loginContainer form > div {
@@ -24,7 +22,6 @@
 
 .circleContainer {
   width: 20px;
-  /* background-color: blue; */
   display: flex;
 }
 
@@ -54,12 +51,10 @@
 
 .formHeader h3 {
   padding: 5px;
-  /* background-color: aliceblue; */
 }
 
 label {
   padding: 5px 0;
-  /* margin-left: 50px; */
 }
 
 input {
@@ -70,7 +65,6 @@ input {
 }
 
 .buttonDiv {
-  /* background-color: teal; */
   width: 250px;
   border-top: solid thin lightgray;
 }
