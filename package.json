@@ -1,8 +1,7 @@
 {
   "name": "bickrredo",
   "version": "1.0.0",
-  "description": "**Table of Contents** - [Bickr](#bickr)   - [Description](#description)   - [Technologies](#technologies)   - [Frontend Overview](#frontend-overview)   - [Backend Overview](#backend-overview)   - [AJAX](#ajax)   - [Early Complications](#early-complications)   - [Conclusion, Next Steps](#conclusion,-next-steps)",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "heroku-postbuild": "npm run build --prefix frontend",
     "install": "npm --prefix backend install backend && npm --prefix frontend install frontend",
