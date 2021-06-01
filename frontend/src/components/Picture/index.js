@@ -4,7 +4,8 @@ import { useParams, useHistory, NavLink } from 'react-router-dom';
 import * as photoActions from '../../store/photos';
 import { fetch } from '../../store/csrf';
 import Comment from '../Comment';
-import './Picture.css';
+// import './Picture.css';
+require('./Picture.css');
 
 const Picture = () => {
   const dispatch = useDispatch();

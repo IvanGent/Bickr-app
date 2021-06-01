@@ -4,7 +4,10 @@ import { useSelector } from 'react-redux';
 import { fetch } from '../../store/csrf';
 import Footer from '../Footer';
 import PhotoContainer from '../PhotoContainer';
-import './Homepage.css';
+// import './Homepage.css';
+require('./Homepage.css');
+
+
 const Homepage = () => {
   const sessionUser = useSelector(state => state.session.user);
   const [photos, setPhotos] = useState([]);

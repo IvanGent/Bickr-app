@@ -6,7 +6,8 @@ import App from './App';
 import configureStore from './store';
 import {restoreCSRF, fetch} from './store/csrf';
 import * as sessionActions from './store/session';
-import './index.css';
+// import './index.css';
+require('./index.css');
 
 const store = configureStore();
 

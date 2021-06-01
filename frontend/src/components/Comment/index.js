@@ -3,7 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import * as commentActions from '../../store/comments';
 import { useParams } from 'react-router-dom';
 import { fetch } from '../../store/csrf';
-import './Comment.css';
+// import './Comment.css';
+require('./Comment.css');
 
 
 

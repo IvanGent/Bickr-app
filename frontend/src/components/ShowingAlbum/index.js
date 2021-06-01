@@ -5,7 +5,8 @@ import { fetch } from '../../store/csrf';
 import * as albumActions from '../../store/album';
 import AlbumStock from '../../images/NoPhotos.jpg';
 import { useSelector } from 'react-redux';
-import './ShowingAlbum.css';
+// import './ShowingAlbum.css';
+require('./ShowingAlbum.css');
 
 
 const ShowingAlbum = ({ album, setShowingAlbum }) => {

@@ -2,7 +2,8 @@ import React from 'react';
 import Github from '../../images/Github.png'
 import AngelList from '../../images/angellist.png'
 import LinkedIn from '../../images/LinkedIn.png'
-import './Footer.css';
+// import './Footer.css';
+require('./Footer.css');
 
 const Footer = () => (
   <section className='footer'>
