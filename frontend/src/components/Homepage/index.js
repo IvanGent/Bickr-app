@@ -3,9 +3,8 @@ import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { fetch } from '../../store/csrf';
 import Footer from '../Footer';
-import './Homepage.css'
 import PhotoContainer from '../PhotoContainer';
-
+import './Homepage.css';
 const Homepage = () => {
   const sessionUser = useSelector(state => state.session.user);
   const [photos, setPhotos] = useState([]);

@@ -3,9 +3,9 @@ import { useDispatch } from 'react-redux';
 import { NavLink, useParams } from 'react-router-dom';
 import { fetch } from '../../store/csrf';
 import * as albumActions from '../../store/album';
-import AlbumStock from '../../images/NoPhotos.jpg'
-import './ShowingAlbum.css'
+import AlbumStock from '../../images/NoPhotos.jpg';
 import { useSelector } from 'react-redux';
+import './ShowingAlbum.css';
 
 
 const ShowngAlbum = ({ album, setShowingAlbum }) => {
