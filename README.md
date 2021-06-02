@@ -1,4 +1,4 @@
-# Bickr(Flickr Clone) (https://bickr-react-app.herokuapp.com/)
+# Bickr(Flickr Clone) (https://bickr-app.herokuapp.com/)
 
 **Table of Contents**
 - [Bickr](#bickr)

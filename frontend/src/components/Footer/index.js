@@ -19,7 +19,7 @@ const Footer = () => (
       AngelList
       <img src={AngelList} alt='angellist' />
     </a>
-    <a href="https://github.com/IvanGent/Bickr/blob/master/README.md" >README</a>
+    <a href="https://github.com/IvanGent/Bickr-app/blob/master/README.md" >README</a>
   </section>
   );
 
