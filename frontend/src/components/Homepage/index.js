@@ -81,7 +81,7 @@ const Homepage = () => {
           <div className='imageContainerFour'>
             <h2>Photo of the day</h2>
             <div className='bottomTop'>
-            {photos.slice(19).map(photo => {
+            {photos.reverse().slice(0,1).map(photo => {
               return <PhotoContainer key={photo.id} props={{
                className: 'rightBottom',
                id: photo.id,
