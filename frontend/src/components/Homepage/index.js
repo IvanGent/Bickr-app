@@ -32,7 +32,6 @@ const Homepage = () => {
         <h1>Find your inspiration.</h1>
         <h2>Join the Bickr community, home to just a few photos</h2>
         <NavLink to='/signup'>Start for free</NavLink>
-        <Footer />
       </div>
     );
   } else {
@@ -94,7 +93,6 @@ const Homepage = () => {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
     );
   };
@@ -102,6 +100,7 @@ const Homepage = () => {
   return (
     <>
       {sessionBody}
+      <Footer />
     </>
   );
 

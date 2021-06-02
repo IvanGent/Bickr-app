@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useParams, NavLink } from 'react-router-dom';
 import { fetch } from '../../store/csrf';
 import Album from '../Album'; 
-import Footer from '../Footer';
 // import './ProfilePage.css';
 require('./ProfilePage.css');
 
@@ -144,7 +143,6 @@ const ProfilePage = () => {
           </>
         )}
       </div>
-      <Footer />
     </div>
   )
 }
