@@ -26,9 +26,7 @@ const LoginFormPage = () => {
   }
 
   const handleDemoLogin = () => {
-    setCredential('demo@user.io')
-    setPassword('password')
-    dispatch(sessionActions.login({credential, password }))
+    dispatch(sessionActions.login({credential: 'demo@user.io', password: 'password' }))
   }
 
   return (
