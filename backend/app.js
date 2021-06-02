@@ -47,10 +47,9 @@ app.use(
     }
   })
 )
-
-// app.use(express.static(path.join(__dirname, 'public')));
-// app.use(express.static(__dirname + '/public'))
-app.use(express.static("../frontend/build"));
+if(process.env.NODE_ENV === 'production') {
+  app.use(express.static("../frontend/build"));
+}
 app.use(routes);
 
 // This is just a regular middleware that will catch any requests that don't match any of the
