@@ -19,6 +19,7 @@ const ProfilePage = () => {
   const [showAlbum, setShowAlbum] = useState(false);
   const [showAlbumCreate, setShowAlbumCreate] = useState(false);
   const [showingAlbum, setShowingAlbum] = useState(false);
+  const [loadingNewPhoto, setLoadingNewPhoto] = useState(false);
 
 
   useEffect(() => {
@@ -36,6 +37,7 @@ const ProfilePage = () => {
 
 
   const handlePhoto = (e) => {
+    setLoadingNewPhoto(true);
     const reader = new FileReader();
     let file = e.target.files[0];
     if(!file.type.match(/image.*/)) {
@@ -59,7 +61,9 @@ const ProfilePage = () => {
 
         const srcEncoded = ctx.canvas.toDataURL(event.target, 'image/jpeg');
         return dispatch(photoActions.addPhotoToProfile({ userId: id, thumbSrc: srcEncoded, src: e.target.result}))
-        .then(res => dispatchEvent(photoActions.gettingState()))
+        .then(res => {
+          setLoadingNewPhoto(false);
+          return dispatchEvent(photoActions.gettingState()) })
         .catch(res => {
           if(res.data && res.data.errors) setErrors(res.data.errors);
         })
@@ -68,9 +72,9 @@ const ProfilePage = () => {
     reader.readAsDataURL(file);
   }
 
-  let place;
+  let photosDisplayed;
   if(userPhotos.length > 0) {
-    place = <div className='photosContainer'>
+    photosDisplayed = <div className='photosContainer'>
       {userPhotos.map(photo => {
         return <div key={photo.id} className='imageContainer'>
           <NavLink to={`/photo/${photo.id}`} className='imageLink' />
@@ -80,7 +84,7 @@ const ProfilePage = () => {
   )}
     </div>
   } else {
-    place = <h1>Photos will show here</h1>
+    photosDisplayed = <h1>Photos will show here</h1>
   }
 
   let addPhoto;
@@ -91,6 +95,7 @@ const ProfilePage = () => {
           <input type='file' id='newPhoto' onChange={handlePhoto} accept='.jpg, .jpeg, .png'  />
           Select a file to upload
         </label>
+        {loadingNewPhoto && <h1 className='loadingPhoto'>Uploading Photo...</h1>}
       </div>
   } else {
     addPhoto = <></>;
@@ -139,7 +144,7 @@ const ProfilePage = () => {
             />
         ) : (
           <>
-          {place}
+          {photosDisplayed}
           </>
         )}
       </div>

@@ -127,3 +127,8 @@
 .tabs div:hover {
   transform: scale(1.2);
 }
+
+.loadingPhoto {
+  font-weight: 200;
+  font-size: 1rem;
+}
